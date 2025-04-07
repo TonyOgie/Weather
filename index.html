@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="./weather.css">
+</head>
+<body>
+    <div id="weather-container">
+        <h2>Weather App</h2>
+        <input type="text" id="city" placeholder="Enter City">
+        <button onclick="getWeather()">Search</button>
+
+        <img id="weather-icon" alt="Weather Icon"> <!--Only shows after city has been searched-->
+
+        <div id="temp-div"></div><!--shows the temperature in searched location-->
+        <div id="weather-info"></div><!--Gives a little description about the weather in the searched location-->
+        <div id="hourly-forecast"></div><!--Shows what will happen in the next 24 hours of the searchedlocation with 3 hour intervals-->
+    </div>
+    <script src="./weather.js"></script>
+</body>
+</html>
